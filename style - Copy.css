@@ -1,0 +1,321 @@
+/*
+	Theme Name: ReClean
+	Theme URI: http://www.codenx.com/
+	Theme Version: 1.0
+	Theme Date: 2013-03-12
+	Theme Author: CodeNx
+	Theme Author URI: http://www.codenx.com/
+	Theme License: GPLv2
+*/
+
+/*---[ Start: global css ]---*/
+
+/* Import Google Web Fonts
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400);
+-------------------------------------------------- @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+*/
+    /**
+    * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+    * http://cssreset.com
+    */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video* {
+    margin: 0;
+    padding: 0;
+    font-family:myFirstFont;
+}
+
+body {
+    background-image: radial-gradient(circle at -0.2% 48.9%, rgb(32, 233, 104) 0%, rgb(13, 167, 236) 99.8%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+  
+  
+}
+#head1{text-align: center;
+ font-size:40px;
+ font-family: "Sofia", sans-serif;
+
+}
+.header-right {
+  float: center;
+  font-size:20px;
+}
+.ExtraCurricular{
+	padding: 30px;
+  font-size: 20px;
+  color:white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-instagram {
+  background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+  color: white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+.a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-dribbble {
+  background: purple;
+  color: white;
+}
+
+
+.button:hover, a:hover {
+  opacity: 0.7;
+}
+
+img {
+ max-width: 100%;
+  height: auto;
+
+   border: 1px solid #ddd;
+  border-radius: 4px;
+}
+div.polaroid {
+  width: 500px;
+  background-color: green;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.java {width: 65%; background-color: #f44336;}
+.c {width: 60%; background-color: #808080;}
+
+
+ #detail{
+  border-collapse: collapse;
+  width: 100%;
+  border: 5px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 20px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(90, 90, 90, 0.4);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    width: 350px;
+	
+}
+.container2 {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 280px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.container h1 {
+    font-size: 40px;
+}
+
+.container > p {
+    margin: 5px 0 20px 0;
+    font-size: 18px;
+}
+
+.container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
